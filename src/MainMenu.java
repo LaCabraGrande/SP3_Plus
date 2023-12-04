@@ -159,6 +159,11 @@ public class MainMenu extends AMenu {
         }
         return listOfTitles;
     }
+    /**
+     *
+     * @param title the typed in rating in the searchByRating-method
+     * @return a ArrayList of medias with at least that rating
+     */
     private ArrayList<AMedia> searchMediaByRating(String ratingString) {
         ArrayList<AMedia> listOfRatings = new ArrayList<>();
         double rating = Double.parseDouble(ratingString);
@@ -208,7 +213,9 @@ public class MainMenu extends AMenu {
             }
         }
     }
-
+    /**
+     * this method search for the typed in rating by calling the searchMediaByRating(rating)-method. If the list is empty no title by that name has been found
+     */
     private void searchByRating() {
         boolean searching = true;
         while (searching) {
