@@ -144,7 +144,6 @@ public class MainMenu extends AMenu {
         return action;
     }
 
-
     /**
      *
      * @param title the typed in title in the searchByTitle-method
@@ -161,7 +160,7 @@ public class MainMenu extends AMenu {
     }
     /**
      *
-     * @param title the typed in rating in the searchByRating-method
+     * @param ratingString the typed in rating in the searchByRating-method
      * @return a ArrayList of medias with at least that rating
      */
     private ArrayList<AMedia> searchMediaByRating(String ratingString) {
@@ -214,7 +213,7 @@ public class MainMenu extends AMenu {
         }
     }
     /**
-     * this method search for the typed in rating by calling the searchMediaByRating(rating)-method. If the list is empty no title by that name has been found
+     * this method search for the typed in rating by calling the searchMediaByTitle(rating)-method. If the list is empty no title by that name has been found
      */
     private void searchByRating() {
         boolean searching = true;
